@@ -1,0 +1,14 @@
+main {
+
+}
+
+#movie-list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie-poster {
+	height: 200px;
+	margin: 10px;
+}

@@ -5,21 +5,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My favourite movies</title>
+	<title>Sacha's filmzoeker - Welkom</title>
 	<link rel="stylesheet" href="style.css">
 	<script defer src="database.js"></script>
 	<script defer src="script.js"></script>
 </head>
 
 <body>
-	<nav>
+	<header>
+		<h1>Welkom bij Sacha's filmzoeker</h1>
+	</header>
+	<nav class="nav-filter-buttons">
 		<input type="radio" name="filter-button" class="filter-button" id="button-movies-all" value="all"
 			checked="true">
 		<label for="all">All movies</label>
 		<input type="radio" name="filter-button" class="filter-button" id="button-movies-latest" value="latest">
 		<label for="latest">Latest movies</label>
-		<input type="radio" name="filter-button" class="filter-button" id="button-movies-avenger" value="avenger">
-		<label for="avenger">Avenger movies</label>
+		<input type="radio" name="filter-button" class="filter-button" id="button-movies-avengers" value="avengers">
+		<label for="avengers">Avenger movies</label>
 		<input type="radio" name="filter-button" class="filter-button" id="button-movies-x-men" value="x-men">
 		<label for="x-men">X-men movies</label>
 		<input type="radio" name="filter-button" class="filter-button" id="button-movies-princess" value="princess">

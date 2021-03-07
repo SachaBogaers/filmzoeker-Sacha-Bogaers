@@ -1,17 +1,17 @@
 const movielist = document.querySelector("#movie-list");
 
-const getImdbUrl = id => `https://www.imdb.com/title/${id}`
+const getImdbUrl = id => `https://www.imdb.com/title/${id}`;
 
 const addMoviesToDom = movies => {
 	movies.forEach(movie => {
 		const newMovie = document.createElement("li");
 		const newMovieURL = document.createElement("a");
 		newMovieURL.href = getImdbUrl(movie.imdbID);
-		newMovieURL.target = "_blank"
-		newMovie.appendChild(newMovieURL);
+		newMovieURL.target = "_blank";
 		const newMoviePoster = document.createElement("img");
 		newMoviePoster.src = movie.Poster;
 		newMoviePoster.className = "movie-poster";
+		newMovie.appendChild(newMovieURL);
 		newMovieURL.appendChild(newMoviePoster);
 		movielist.appendChild(newMovie);
 	})

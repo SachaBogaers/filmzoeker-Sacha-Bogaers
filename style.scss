@@ -1,14 +1,36 @@
-main {
+$background-clr: rgb(69, 199, 155);
+$text-clr: #111;
 
+body {
+	background-color: $background-clr;
+	color: $text-clr;
+}
+
+header {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-filter-buttons {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	& label {
+		font-size: 0.8em;
+	}
 }
 
 #movie-list {
 	list-style-type: none;
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .movie-poster {
-	height: 200px;
-	margin: 10px;
+	height: 300px;
+	margin-bottom: 15px;
 }
